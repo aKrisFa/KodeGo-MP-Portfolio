@@ -1,0 +1,208 @@
+body {
+    background-color: rgb(162, 157, 163) !important;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(178, 216, 210, 0.897));
+    }
+
+/* navbar section start*/
+    .navbar {
+    background-color: rgba(162, 157, 163, 0.685) !important;
+    }
+
+    #nav-name2 {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-family: Monoton;
+        color: rgb(252, 250, 253) !important;
+        background-color: rgba(47, 8, 65, 0.774);
+        border-top-right-radius: 20px 20px;
+        border-bottom-left-radius: 20px 20px;
+        border-bottom: 4px solid rgba(178, 216, 210, 0.856);
+        border-left: 4px solid  rgb(178, 216, 210, 0.856);
+        border-top: 4px solid rgb(47, 8, 65);
+        border-right: 4px solid  rgb(47, 8, 65);
+        animation: slideRight 1s ease forwards;
+    }
+   
+    .navbar-brand:hover {
+        font-family: Monoton;
+        color: rgb(47, 8, 65) !important;
+        background-color: rgba(178, 216, 210, 0.603);
+        cursor: pointer !important;
+        border-bottom: 4px solid (178, 216, 210, 0.753);
+        border-top: 4px solid;
+        border-left: 4px solid rgb(47, 8, 65);
+        border-right: 4px solid  rgba(178, 216, 210, 0.753);
+        border-top-left-radius: 20px 20px;
+        border-bottom-right-radius: 20px 20px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+        transition: 0.7s;    
+    }
+
+    .fa-bars {
+        color: white;
+        font-size: 30px !important;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+    }
+
+    .navbar-toggler:hover {
+       background-color: rgba(47, 8, 65, 0.534);
+       border: none !important;
+    }
+
+    #navbarNav ul li {
+        font-size: 16px;
+        width: 100px;
+        height: 35px;
+        cursor: pointer !important;
+    }
+        
+    #navbarNav ul li :hover {
+        font-size: 14px;
+        color: rgb(247, 245, 248) !important;
+        cursor: pointer !important;
+        border-top-left-radius: 15px 15px;
+        border-bottom-right-radius: 15px 15px;
+        border-top: 4px solid transparent;
+        border-left: 4px solid  transparent;
+        border-right: 3.5px solid rgba(178, 216, 210, 0.753);
+        border-bottom: 3.5px solid rgba(178, 216, 210, 0.753);
+        transition: 0.4s;
+    }
+/* navbar section end*/
+
+/* home section start */
+    #home img {
+        border-radius: 50%;
+    }
+
+    .home-text h2 {
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.288);
+    }
+
+    #btnCV {
+        width: 135px;
+        height: 40px;
+        border: 3px solid rgba(178, 216, 210, 0.753);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    }
+
+    #btnCV:hover {
+        width: 135px;
+        border: 2px solid  transparent;
+        box-shadow: 0px 0px 4px 4px rgba(178, 216, 210, 0.753);
+    }
+
+    #btnCV span:hover {
+        color: rgb(247, 245, 248);
+    }
+
+
+    .social-links .btn {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(178, 216, 210, 0.753);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+        border-radius: 50% !important;
+        padding: 5px;
+        margin: 7px 10px;
+    }
+
+    .social-links .btn:hover {
+        border: transparent;
+        box-shadow: 0px 0px 4px 4px rgba(178, 216, 210, 0.753);
+        color: white;
+    }
+
+
+    .social-links .btn i:hover {
+        color: rgb(247, 245, 248);
+    }
+
+/* home section end*/
+
+@media (320px <= width <= 769px) {
+
+    .navbar-brand {
+        display: none !important;
+    }
+
+    #nav-name2 {
+        display: flex !important;
+        width: 50px;
+        justify-content: center;
+    }
+
+    .navbar-nav {
+      align-items: center;
+      font-size: 200px;
+    }
+
+    #home img {
+        height: 230px;
+        width: 230px;
+        margin-top: -170px;
+        margin-bottom: 0;
+    }
+
+    .home-text {
+        margin-top: -25px;
+    }
+
+    .home-text p {
+        font-size: 15px !important;
+        margin-left: 15px !important;
+    }
+
+    .home-text h1 {
+        font-size: 25px !important;
+        margin-left: 15px;
+    }
+
+    .home-text h2 {
+        font-size: 30px !important;
+        margin-left: 15px;
+    }
+
+    .home-text h2 {
+        font-size: 30px !important;
+        margin-left: 15px;
+    }
+
+    .home-links {
+        margin-top: 5px !important;
+    }
+
+    #btnCV {
+        font-size: 13px;
+        width: 120px;
+        height: 35px;
+        border: 3px solid rgba(178, 216, 210, 0.753);
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+        align-items: center;  
+           
+    }
+
+    .social-links {
+        margin-left: 68px;
+    }
+
+    .social-links .btn {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        margin-top: 15px;        
+    }
+
+    .footer {
+        display: contents;
+    }
+
+
+}
+
