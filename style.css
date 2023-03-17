@@ -79,16 +79,18 @@ body {
         transition: 0.4s;
     }
 
-    #navbarNav ul li #social-links {
-        display: none !important;
+    li#social-links {
+        display: none;
     }
 
 /* navbar section end*/
 
 /* home section start */
+
     #home img {
         border-radius: 50%;
     }
+
 
     .home-text h2 {
         text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.082);
@@ -180,10 +182,11 @@ body {
 
 /* contact me section end*/
 
+
 @media (320px <= width <= 769px) {
 
     .navbar {
-        background-color: rgba(162, 157, 163, 0.432) !important;
+        background-color: rgba(162, 157, 163, 0.889) !important;
         }
     
     .navbar-brand {
@@ -197,13 +200,9 @@ body {
         justify-content: center;
     }
 
-    #navbarNav {
-        background-color:  rgba(178, 216, 210, 0.753);
-    }
-
     .navbar-nav {
-      align-items: center;
-      font-size: 200px;
+        /* background-color:  rgba(178, 216, 210, 0.753); */
+        align-items: center;
     }
 
     .navbar-brand:hover {
@@ -217,16 +216,22 @@ body {
         cursor: pointer !important;
     }
 
-    .nav-link {
-        color: white !important;
+    li .nav-link {
+        color: rgb(47, 8, 65);
+
     }
 
-    #navbarNav ul li #social-links {
+    li#social-links {
         display: contents;
-        border: none
+        display: inline-flex;
+        justify-content: center;
+        border: none;
+        
     }
 
-
+    li#social-links i{
+       color: rgb(47, 8, 65);
+    }
 
     #home img {
         height: 250px;
@@ -239,10 +244,10 @@ body {
         margin-top: -25px;
     }
 
-    .home-text p #hello {
-        font-size: 15px !important;
+    .home-text p {
+        font-size: 25px !important;
         margin-left: 15px !important;
-        padding-left: 65px;
+        padding-left: 52px;
     }
 
     .home-text .text {
@@ -282,10 +287,20 @@ body {
         margin-top: 25px;  
     }
 
+    /* #w-xp-box {
+    margin: 5px 40px;
+    padding: 5px 40px;
+
+    } */
+
+    section card {
+        background-color: rgba(178, 216, 210, 0.753);
+    }
+
     
     .social-links .btn {
-
         margin-bottom: 15px;        
+        margin-left: 5px;
     } 
 
     .footer {
