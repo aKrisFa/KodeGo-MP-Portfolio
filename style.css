@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgb(162, 157, 163) !important;
     background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(178, 216, 210, 0.897));
@@ -5,7 +10,7 @@ body {
 
 /* navbar section start*/
     .navbar {
-    background-color: rgba(162, 157, 163, 0.685) !important;
+    background-color: rgba(162, 157, 163, 0.377) !important;
     }
 
     #nav-name2 {
@@ -22,7 +27,6 @@ body {
         border-left: 4px solid  rgb(178, 216, 210, 0.856);
         border-top: 4px solid rgb(47, 8, 65);
         border-right: 4px solid  rgb(47, 8, 65);
-        animation: slideRight 1s ease forwards;
     }
    
     .navbar-brand:hover {
@@ -74,6 +78,11 @@ body {
         border-bottom: 3.5px solid rgba(178, 216, 210, 0.753);
         transition: 0.4s;
     }
+
+    #navbarNav ul li #social-links {
+        display: none !important;
+    }
+
 /* navbar section end*/
 
 /* home section start */
@@ -82,31 +91,69 @@ body {
     }
 
     .home-text h2 {
-        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.288);
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.082);
+    }
+/* home section end */
+
+/* about section start */
+    #about-container {
+        margin-top: -30px;
+    }
+ 
+    #html img {
+        width: 52px;
+        height: 52px;
+    }
+
+    #css img {
+        width: 52px;
+        height: 52px;
+    }
+
+    #bootstrap img {
+        width: 45px;
+        height: 45px;
+    }
+
+    #javascript img {
+        width: 42px;
+        height: 42px;
+    }
+
+    #autodesk img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .btn {
+        outline: none !important;
+
     }
 
     #btnCV {
         width: 135px;
         height: 40px;
-        border: 3px solid rgba(178, 216, 210, 0.753);
+        border: 3px solid  rgba(178, 216, 210, 0.753);
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+        outline: 0px solid transparent;
     }
 
     #btnCV:hover {
         width: 135px;
         border: 2px solid  transparent;
         box-shadow: 0px 0px 4px 4px rgba(178, 216, 210, 0.753);
+        outline: none !important;
     }
 
-    #btnCV span:hover {
-        color: rgb(247, 245, 248);
+/* about section end */
+
+/* contact me section start */
+    .contact-item .icon i {
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
     }
-
-
     .social-links .btn {
         width: 40px;
         height: 40px;
-        border: 3px solid rgba(178, 216, 210, 0.753);
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
         border-radius: 50% !important;
         padding: 5px;
@@ -119,17 +166,29 @@ body {
         color: white;
     }
 
-
     .social-links .btn i:hover {
         color: rgb(247, 245, 248);
     }
 
-/* home section end*/
+    #send {
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
+    }
+
+    #send:hover {
+        box-shadow: 0px 0px 4px 4px rgba(178, 216, 210, 0.753);
+    }
+
+/* contact me section end*/
 
 @media (320px <= width <= 769px) {
 
+    .navbar {
+        background-color: rgba(162, 157, 163, 0.432) !important;
+        }
+    
     .navbar-brand {
         display: none !important;
+        text-shadow: none !important;
     }
 
     #nav-name2 {
@@ -138,14 +197,40 @@ body {
         justify-content: center;
     }
 
+    #navbarNav {
+        background-color:  rgba(178, 216, 210, 0.753);
+    }
+
     .navbar-nav {
       align-items: center;
       font-size: 200px;
     }
 
+    .navbar-brand:hover {
+        transition: 0.7s;    
+    }
+
+    #navbarNav ul li {
+        font-size: 16px;
+        width: 100vw;
+        height: 35px;
+        cursor: pointer !important;
+    }
+
+    .nav-link {
+        color: white !important;
+    }
+
+    #navbarNav ul li #social-links {
+        display: contents;
+        border: none
+    }
+
+
+
     #home img {
-        height: 230px;
-        width: 230px;
+        height: 250px;
+        width: 250px;
         margin-top: -170px;
         margin-bottom: 0;
     }
@@ -154,14 +239,28 @@ body {
         margin-top: -25px;
     }
 
-    .home-text p {
+    .home-text p #hello {
         font-size: 15px !important;
         margin-left: 15px !important;
+        padding-left: 65px;
+    }
+
+    .home-text .text {
+        font-size: 15px !important;
+        margin-left: 15px !important;
+        padding-left: 65px;
     }
 
     .home-text h1 {
         font-size: 25px !important;
         margin-left: 15px;
+        padding-left: 52px;
+    }
+
+    .home-text h2 {
+        font-size: 30px !important;
+        margin-left: 15px;
+        padding-left: 50px;
     }
 
     .home-text h2 {
@@ -169,35 +268,25 @@ body {
         margin-left: 15px;
     }
 
-    .home-text h2 {
-        font-size: 30px !important;
-        margin-left: 15px;
-    }
-
-    .home-links {
-        margin-top: 5px !important;
+    .text-educ {
+        align-content: center;
     }
 
     #btnCV {
-        font-size: 13px;
-        width: 120px;
-        height: 35px;
+        font-size: 14px;
+        width: 130px;
+        height: 40px;
         border: 3px solid rgba(178, 216, 210, 0.753);
         box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.288);
         align-items: center;  
-           
+        margin-top: 25px;  
     }
 
-    .social-links {
-        margin-left: 68px;
-    }
-
+    
     .social-links .btn {
-        width: 35px;
-        height: 35px;
-        padding: 5px;
-        margin-top: 15px;        
-    }
+
+        margin-bottom: 15px;        
+    } 
 
     .footer {
         display: contents;
